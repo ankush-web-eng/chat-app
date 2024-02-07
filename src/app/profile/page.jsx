@@ -1,6 +1,5 @@
 "use client";
 
-import axios from "axios";
 import React from "react";
 import Link from "next/link";
 import ProfileNav from "@/components/navbar";

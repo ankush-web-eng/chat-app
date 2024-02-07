@@ -40,7 +40,7 @@ export default function Home() {
   }, []);
 
   return (
-    <body className=" flex flex-col dark:bg-black dark:text-white bg-white text-black space-y-4 h-screen">
+    <body className="text-black bg-white dark:bg-black dark:text-white flex flex-col space-y-4 h-screen">
       <ProfileNav className="w-screen z-10 fixed"/>
       <main className="flex flex-col items-center justify-center max-h-full ">
         <div className="flex flex-col space-y-4 box-shadow-2xl shadow-2xl px-2 py-4 rounded-xl ">

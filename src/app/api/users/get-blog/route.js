@@ -7,7 +7,6 @@ connect();
 export async function GET() {
   try {
     const data = await Blog.find({});
-    console.log(data);
 
     return NextResponse.json({
       data: data,
