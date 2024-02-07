@@ -85,19 +85,19 @@ export default function UserProfilePage() {
 
   return (
     <>
-      <div className="h-screen flex flex-col space-y-2 overflow-visible">
+      <div className="h-screen flex flex-col space-y-2">
         <ProfileNav className="" />
-        <div className="flex flex-wrap w-screen flex-col h-5/6">
+        <div className="flex flex-wrap w-screen mt-8 flex-col h-5/6">
           <div className="flex flex-col w-screen h-full">
-            <div className=" h-5/6 rounded-md border-2 w-screen border-black overflow-hidden overflow-y-scroll snap-end dark:border-white flex flex-col justify-center items-start px-2 ">
-              <div className="pb-4 overflow-hidden w-screen h-5/6 overflow-y-scroll overflow-x-scroll">
+            <div className=" h-5/6 rounded-md border-2 w-screen border-black snap-end dark:border-white flex flex-col justify-center items-start px-2 ">
+              <div className="pb-4 w-screen h-5/6 overflow-hidden overflow-y-scroll">
                 {dataInbox == null
                   ? ""
                   : dataInbox.map((data, index) => (
                       <div className="flex flex-row justify-start" key={index}>
-                        <p className="italic">
+                        <strong className="italic" style={{color:changeColors()}}>
                           {data.name == person ? "You" : data.name} :{" "}
-                        </p>{" "}
+                        </strong>{" "}
                         {data.message}{" "}
                       </div>
                     ))}
